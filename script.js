@@ -33,7 +33,7 @@ function addData() {
 
 function removeFailedStudent() {
   //Write your code here, just console.log
-  console.log(arr.marks<50);
+  console.log(arr.filter(stu => stu.marks < 50).map(stu => stu));
 }
 
 function concatenateArray() {
