@@ -14,21 +14,30 @@ let arr1 = [
 
 function PrintStudentswithMap() {
   //Write your code here , just console.log
-  //console.log(arr.map)
+  
   console.log(arr.filter(stu => stu.marks > 50).map(stu => stu));
 }
 
 function PrintStudentsbyForEach() {
   //Write your code here , just console.log
-  //arr.forEach(stud => stud.marks > 50 (console.log(stud.name)));
-  //console.log(arr.forEach(stu => stu.marks > 50));
-  //console.log(arr.forEach(number => number.marks > 50);(arr.forEach(number => number.marks > 50) console.log(number));
- 
-  
+  arr.forEach(arr => {
+    if (arr.marks > 50) {
+      console.log(arr);
+//       .name + ' ' + arr.marks
+    }
+  });
 }
 
 function addData() {
   //Write your code here, just console.log
+  let newData = {
+    id: 4,
+    name: "susan",
+    age: 20,
+    marks: 45
+  };
+  arr.push(newData);
+  console.log(newData)
 }
 
 function removeFailedStudent() {
